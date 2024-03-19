@@ -1,0 +1,16 @@
+Conventional manner of coding that i have been doing till now was 'MONOLITH ARCHITECTURE'
+
+Types:::
+1 monolith -   it is an architecture where fronend and backend both are hosted on the same domain for example next.js.
+2 multitier it is an architeture where frontend and backend both are hosted on different domains. (for example: frontend on vercel and backend on render.com)
+
+problem of monolith :
+same tech stack for all the components.
+whole redployment at the time of a minor change also.
+cant scale one api alone, have to scale entire.
+cannot use different dependancies version for different componenets.
+
+
+3 microservice - 
+different backend services that are seggregated follows the microservice architecture. Hosting all seperately can create a problem, so docker or any other alternative service is used for creating a service. 
+Containerization of all these services is done and all of the dependancies are already present here, so it is an isolated environment which can run on any machine, anytime, either if it has the critical required dependancies or not.
